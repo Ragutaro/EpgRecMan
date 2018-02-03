@@ -119,6 +119,7 @@ type
     sRecordFolder : String;
     sJKLogFolder : String;
     sRegExp : String;
+    sTVPlayer, sTVonRec : String;
     IsCollupsed : Boolean;
     bIsTitle : Boolean;
     IsDebug : Boolean;
@@ -263,35 +264,34 @@ begin
 end;
 
 procedure TfrmMain.lvwListDblClick(Sender: TObject);
+const
+  STR_FORMAT = 'call "%s" %s "%s"';
+  STR_ON_REC = '/fullscreen /jkdlgview chatselect /jkchatsrc ニコニコ実況,ニコニコ実況過去ログ';
+  STR_PLAYER = '/fullscreen';
 var
   item : TListItemEx;
   sl : TStringList;
-  s : String;
+  s, sBat : String;
 begin
   item := TListItemEx(lvwList.Selected);
   if item <> nil then
   begin
     sl := TStringList.Create;
     try
+      sBat := GetApplicationPath + 'ViewTV.bat';
       if item.ImageIndex >= 82 then
-        s := Format('call "%s" %s "%s"',
-                    ['C:\!MyData\Programs\PT3\TVTestPlayer\TVTestOnRec.exe',
-                     '/fullscreen /jkdlgview chatselect /jkchatsrc ニコニコ実況,ニコニコ実況過去ログ',
-                     item.sProgramFullPath])
+        s := Format(STR_FORMAT, [av.sTVonRec, STR_ON_REC, item.sProgramFullPath])
       else
-        s := Format('call "%s" %s "%s"',
-                    ['C:\!MyData\Programs\PT3\TVTestPlayer\TVTest.exe',
-                     '/fullscreen',
-                     item.sProgramFullPath]);
+        s := Format(STR_FORMAT, [av.sTVPlayer, STR_PLAYER, item.sProgramFullPath]);
 
       sl.Add('@echo');
       sl.Add('chcp 65001');
       sl.Add(s);
-      sl.SaveToFile(GetApplicationPath + 'ViewTV.bat', TEncoding.UTF8);
+      sl.SaveToFile(sBat, TEncoding.UTF8);
     finally
       sl.Free;
     end;
-    ShellExecuteW(Self.Handle, 'open', PWideChar(GetApplicationPath + 'ViewTV.bat'), nil, nil, SW_MINIMIZE);
+    ShellExecuteW(Self.Handle, 'open', PWideChar(sBat), nil, nil, SW_MINIMIZE);
   end;
 end;
 
@@ -739,6 +739,8 @@ begin
     av.IsCollupsed    := ini.ReadBool(Self.Name,    'lvwList.Group.State', False);
     av.bIsTitle       := ini.ReadBool(Self.Name,    'CategorizeByTitle', False);
     av.IsDebug        := False;
+    av.sTVPlayer      := ini.ReadString(Self.Name,  'TVPlayer', '');
+    av.sTVonRec       := ini.ReadString(Self.Name,  'TVonRec', '');
     Self.Font.Name    := ini.ReadString('Font', 'FontName', '游ゴシック Medium');
     Self.Font.Size    := ini.ReadInteger('Font', 'FontSize', 10);
     if FileExists('Search.txt') then
