@@ -108,9 +108,9 @@
         <AppEnableHighDPI>true</AppEnableHighDPI>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <Icon_MainIcon>Icons\MetroIcon.ico</Icon_MainIcon>
-        <VerInfo_Build>396</VerInfo_Build>
+        <VerInfo_Build>402</VerInfo_Build>
         <DCC_RemoteDebug>true</DCC_RemoteDebug>
-        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.396;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.402;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_DependencyCheckOutputName>Debug\EpgRecMan.exe</DCC_DependencyCheckOutputName>
