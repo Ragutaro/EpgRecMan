@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2016/01/07 12:05:08.759.dfm,C:\!MyData\MyBetaSoftware\D2009\EpgTimerRecMan\Main.dfm=C:\Users\ragu\Documents\RAD Studio\Projects\MyForm.dfm</Transaction>
-    <Transaction>2016/01/07 12:05:08.759.pas,C:\!MyData\MyBetaSoftware\D2009\EpgTimerRecMan\Main.pas=C:\Users\ragu\Documents\RAD Studio\Projects\MyForm.pas</Transaction>
-    <Transaction>2016/01/07 12:05:26.258.dproj,C:\!MyData\MyBetaSoftware\D2009\EpgTimerRecMan\EpgRecMan.dproj=C:\Users\ragu\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/01/07 12:05:08.759.pas,C:\Users\ragu\Documents\RAD Studio\Projects\MyForm.pas=C:\!MyData\MyBetaSoftware\D2009\EpgTimerRecMan\Main.pas</Transaction>
+    <Transaction>2016/01/07 12:05:08.759.dfm,C:\Users\ragu\Documents\RAD Studio\Projects\MyForm.dfm=C:\!MyData\MyBetaSoftware\D2009\EpgTimerRecMan\Main.dfm</Transaction>
+    <Transaction>2016/01/07 12:05:26.258.dproj,C:\Users\ragu\Documents\RAD Studio\Projects\Project1.dproj=C:\!MyData\MyBetaSoftware\D2009\EpgTimerRecMan\EpgRecMan.dproj</Transaction>
     <Transaction>2016/01/08 16:27:33.000.457,=C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Unit1.pas</Transaction>
-    <Transaction>2016/01/08 16:28:43.000.200,C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Information.pas=C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Unit1.pas</Transaction>
-    <Transaction>2016/01/08 16:28:43.000.200,C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Information.dfm=C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Unit1.dfm</Transaction>
+    <Transaction>2016/01/08 16:28:43.000.200,C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Unit1.dfm=C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Information.dfm</Transaction>
+    <Transaction>2016/01/08 16:28:43.000.200,C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Unit1.pas=C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Information.pas</Transaction>
     <Transaction>2016/01/23 14:02:38.000.765,=C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Unit1.pas</Transaction>
-    <Transaction>2016/01/23 14:03:54.000.963,C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Rename.dfm=C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Unit1.dfm</Transaction>
-    <Transaction>2016/01/23 14:03:54.000.963,C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Rename.pas=C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Unit1.pas</Transaction>
+    <Transaction>2016/01/23 14:03:54.000.963,C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Unit1.dfm=C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Rename.dfm</Transaction>
+    <Transaction>2016/01/23 14:03:54.000.963,C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Unit1.pas=C:\!MyData\MyBetaSoftware\XE8\EpgTimerRecMan\Rename.pas</Transaction>
     <Transaction>2016/11/08 16:35:50.000.150,=C:\!MyData\MyBetaSoftware\Seattle\EpgTimerRecMan\MyForm.pas</Transaction>
-    <Transaction>2016/11/08 16:36:53.000.829,C:\!MyData\MyBetaSoftware\Seattle\EpgTimerRecMan\SetFileTime.pas=C:\!MyData\MyBetaSoftware\Seattle\EpgTimerRecMan\MyForm.pas</Transaction>
-    <Transaction>2016/11/08 16:36:53.000.829,C:\!MyData\MyBetaSoftware\Seattle\EpgTimerRecMan\SetFileTime.dfm=C:\!MyData\MyBetaSoftware\Seattle\EpgTimerRecMan\MyForm.dfm</Transaction>
+    <Transaction>2016/11/08 16:36:53.000.829,C:\!MyData\MyBetaSoftware\Seattle\EpgTimerRecMan\MyForm.dfm=C:\!MyData\MyBetaSoftware\Seattle\EpgTimerRecMan\SetFileTime.dfm</Transaction>
+    <Transaction>2016/11/08 16:36:53.000.829,C:\!MyData\MyBetaSoftware\Seattle\EpgTimerRecMan\MyForm.pas=C:\!MyData\MyBetaSoftware\Seattle\EpgTimerRecMan\SetFileTime.pas</Transaction>
   </Transactions>
 </BorlandProject>
