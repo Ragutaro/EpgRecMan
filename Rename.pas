@@ -134,7 +134,7 @@ var
 begin
   ini := TMemIniFile.Create(GetIniFileName, TEncoding.Unicode);
   try
-    ini.ReadWindowPosition(Self.Name, Self);
+    ini.ReadWindow(Self.Name, Self);
     Self.Font.Name := ini.ReadString('Font', 'FontName', '游ゴシック Medium');
     Self.Font.Size := ini.ReadInteger('Font', 'FontSize', 9);
   finally
@@ -148,7 +148,7 @@ var
 begin
   ini := TMemIniFile.Create(GetIniFileName, TEncoding.Unicode);
   try
-    ini.WriteWindowPosition(Self.Name, Self);
+    ini.WriteWindow(Self.Name, Self);
     ini.UpdateFile;
   finally
     ini.Free;

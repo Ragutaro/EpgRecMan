@@ -245,22 +245,7 @@ end;
 procedure TfrmMain.lvwListCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  DefaultDraw := True;
-
-  with lvwList.Canvas do
-  begin
-    Brush.Style := bsSolid;
-    if cdsHot in State then
-    begin
-      Brush.Color := $00FFF3E5;
-      Font.Color  := clWindowText;
-      Font.Style  := [fsUnderline];
-    end
-    else
-    begin
-      Brush.Color := clWindow;
-    end;
-  end;
+  lvwList.SetHoverStyle(State, DefaultDraw);
 end;
 
 procedure TfrmMain.lvwListDblClick(Sender: TObject);

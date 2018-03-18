@@ -4,8 +4,8 @@ object frmRename: TfrmRename
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
   Caption = #12501#12449#12452#12523#21517#12398#22793#26356
-  ClientHeight = 136
-  ClientWidth = 528
+  ClientHeight = 127
+  ClientWidth = 609
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -40,7 +40,7 @@ object frmRename: TfrmRename
     Caption = '1234_56-'
   end
   object lblExt: TLabel
-    Left = 503
+    Left = 583
     Top = 59
     Width = 13
     Height = 13
@@ -49,23 +49,24 @@ object frmRename: TfrmRename
   object edtInput: TEdit
     Left = 64
     Top = 56
-    Width = 433
+    Width = 513
     Height = 21
     TabOrder = 0
     Text = 'edtInput'
   end
   object btnOK: TButton
-    Left = 192
-    Top = 96
+    Left = 222
+    Top = 92
     Width = 75
     Height = 25
     Caption = 'OK'
+    Default = True
     TabOrder = 1
     OnClick = btnOKClick
   end
   object btnCancel: TButton
-    Left = 280
-    Top = 96
+    Left = 310
+    Top = 92
     Width = 75
     Height = 25
     Caption = #12461#12515#12531#12475#12523

@@ -196,6 +196,10 @@ object frmMain: TfrmMain
     SortOrder = soAscending
     WrapAround = False
     DefaultSortOrder = soAscending
+    HoverColor = 16774117
+    HoverFontColor = clTeal
+    UnevenColor = 16710392
+    EvenColor = clWindow
   end
   object lstLog: TListBox
     Left = 0
